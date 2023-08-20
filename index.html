@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natime</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>Natime</h1>
+      </div>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+        <span class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-github"></i>
+        </span>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <div class="home-text">
+        <div class="heading-home">Keeping You Up To Date</div>
+        <div class="para-home">
+          With our new <b>Natime</b> smartwatch you can do anything you think
+          you should be able to do on a smartwatch. Scroll down for more
+          details.
+        </div>
+        <button class="home-button">
+          <a href="#about">More Details &#10132;</a>
+        </button>
+      </div>
+
+      <div class="home-image">
+        <img
+          id="main-home-img"
+          src="./assets/watch.png"
+          alt="watch-img"
+          height="400px"
+        />
+        <div class="shape-1">
+          <img class="home-shape" src="./assets/graph.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-img">
+        <div class="main-img">
+          <img src="./assets/watch1.png" alt="watch" id="imgabt" />
+        </div>
+        <div class="small-img">
+          <img src="./assets/watch.png" alt="watch" onclick="clickimg(this)" />
+          <img src="./assets/watch1.png" alt="watch" onclick="clickimg(this)" />
+          <img src="./assets/watch2.png" alt="watch" onclick="clickimg(this)" />
+          <img src="./assets/watch3.png" alt="watch" onclick="clickimg(this)" />
+        </div>
+      </div>
+      <div class="about-para">
+        <h1>About Us</h1>
+        <p>
+          At Natime, we believe that innovation should be accessible to all.
+          That's why we continuously strive to offer affordable yet feature-rich
+          smartwatches, making cutting-edge technology available to a broader
+          audience. Customer satisfaction is at the core of our values, and we
+          are committed to providing exceptional support and service to our
+          valued customers.
+          <br />
+          <button class="about-button">
+            <a href="#features">See Features</a>
+          </button>
+        </p>
+      </div>
+    </section>
+
+    <section id="features">
+      <div id="features-cards">
+        <div class="f-card">
+          <div class="cardimg">
+            <img src="./assets/icons/battery-icon.png" alt="" />
+          </div>
+          <div class="cardtext">
+            <h3>Long Lasting Battery</h3>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="cardimg">
+            <img src="./assets/icons/screensize-icon.png" alt="" />
+          </div>
+          <div class="cardtext">
+            <h3>1.8 Inches HD+ Display</h3>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="cardimg">
+            <img src="./assets/icons/sport-icon.png" alt="" />
+          </div>
+          <div class="cardtext">
+            <h3>Multiple Sports Mode</h3>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="cardimg">
+            <img src="./assets/icons/btcall-icon.png" alt="" />
+          </div>
+          <div class="cardtext">
+            <h3>High Quality Bluetooth Calling</h3>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="cardimg">
+            <img src="./assets/icons/waterproof-icon.jpg" alt="" />
+          </div>
+          <div class="cardtext">
+            <h3>Water Resistant</h3>
+          </div>
+        </div>
+        <div class="f-card">
+          <div class="cardimg">
+            <img src="./assets/icons/warranty-icon.jpg" alt="" />
+          </div>
+          <div class="cardtext">
+            <h3>3 Years Warranty</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="box-wrapper">
+        <div class="info-wrap">
+          <h2 class="info-title">Contact Information</h2>
+          <h3 class="info-sub-title">
+            Fill up the form and Natime Team will get back to you within 24 hours
+          </h3>
+          <ul class="info-details">
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>Phone:</span>
+              <a>+ 123 - 456 - 7890</a>
+            </li>
+            <li>
+              <i class="fas fa-paper-plane"></i>
+              <span>Email:</span>
+              <a>support@natime.com</a>
+            </li>
+            <li>
+              <i class="fas fa-globe"></i>
+              <span>Website:</span> <a>www.natime.com</a>
+            </li>
+          </ul>
+          
+
+        </div>
+        <div class="form-wrap">
+          <form action="#" method="POST">
+            <h2 class="form-title">Send us a message</h2>
+            <div class="form-fields">
+              <div class="form-group">
+                <input type="text" class="fname" placeholder="First Name" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="lname" placeholder="Last Name" />
+              </div>
+              <div class="form-group">
+                <input type="email" class="email" placeholder="Mail" />
+              </div>
+              <div class="form-group">
+                <input type="number" class="phone" placeholder="Phone" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id=""
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+            </div>
+            <input type="submit" value="Send Message" class="submit-button" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer style="text-align: center;">
+      &#169; Natime 2023. All Rights Reserved | <a style="color: lightcoral;" href="https://www.instagram.com/navu.exe/">Instagram</a> 
+    </footer>
+    <!--Javascript-->
+    <script src="./js/script.js"></script>
+    <!--Font Awesome Script-->
+    <script src="https://kit.fontawesome.com/681ea7e184.js"crossorigin="anonymous"></script>
+  </body>
+</html>
